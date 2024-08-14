@@ -1,0 +1,2 @@
+def remove_parentheses(strings):
+    return [s.split('(')[0].strip() for s in strings]
