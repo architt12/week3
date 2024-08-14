@@ -1,0 +1,6 @@
+def extract_characters(filenames):
+    characters = []
+    for filename in filenames:
+        with open(filename, 'r') as file:
+            characters.extend(file.read())
+    return characters
