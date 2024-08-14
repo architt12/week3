@@ -1,0 +1,7 @@
+from collections import Counter
+
+def most_repetitive_word(filename):
+    with open(filename, 'r') as file:
+        words = file.read().split()
+    word_counts = Counter(words)
+    return word_counts.most_common(1)[0][0]
